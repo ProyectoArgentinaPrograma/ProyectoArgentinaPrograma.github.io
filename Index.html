@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/fa10d05560.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <img src="" alt="" id="cvImage" class="cvImage" />
+      <h1 id="personName" class="nombrePersona"></h1>
+      <button class="btnDetails">
+        <h2 id="toggleBtn">Mostrar detalles</h2>
+      </button>
+      <section class="column column--right">
+        <article class="card" id="card">
+          <h2 class="card__title">Destrezas</h2>
+          <div class="skills__header">
+            <span>Años de experiencia:</span>
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">3</span>
+            <span class="skills__start-level">5</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Css</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Javascript</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">ReactJs</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Php</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Photoshop</p>
+              <div class="skills__bar skills__bar--40"></div>
+            </div>
+
+            <br />
+
+            <h2>Idiomas</h2>
+
+            <div class="skills__item">
+              <p class="skills__tech">Español</p>
+              <div class="skills__bar skills__bar--100"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Inglés</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Portugués</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <section class="sections personalDetails">
+      <i class="fa-solid fa-user"></i>
+      <h2>Detalles Personales</h2>
+    </section>
+    <div class="info">
+      <p>Nombre: <span id="nombre"></span></p>
+      <p>Dirección: <span id="direccion"></span></p>
+      <p>Número de teléfono: <span id="numero"></span></p>
+      <p>Correo electrónico: <span id="correo"></span></p>
+      <p>Fecha de nacimiento: <span id="nacimiento"></span></p>
+      <p>Género: <span id="genero"></span></p>
+      <p>Nacionalidad: <span id="nacionalidad"></span></p>
+      <p>Estado civil: <span>Soltero/a</span></p>
+    </div>
+    <section class="sections Profile">
+      <i class="fa-sharp fa-solid fa-address-card"></i>
+      <h2>Perfil</h2>
+    </section>
+    <div class="info">
+      Desarrollador/a de software con experiencia en diseño, instalación,
+      pruebas y mantenimiento de sistemas de software. Dominio de varias
+      plataformas, lenguajes y sistemas integrados. Experiencia en las
+      herramientas y procedimientos de desarrollo mas vanguardistas. Capaz de
+      autogestion eficaz en proyectos independientes. Buenas habilidades de
+      colaboracion dentro de un equipo productivo.
+    </div>
+    <section class="sections Educación">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <h2>Educación</h2>
+    </section>
+    <div class="info">
+      <div class="educacion">
+        <h3>Máster en Ingenieria Informática</h3>
+        <span>ene.2015-jun.2018</span>
+      </div>
+      <p>
+        Escuela de Ingenieria Informática, Universidad de Buenos Aires, Buenos
+        Aires.
+      </p>
+
+      <div class="educacion">
+        <h3>Licenciatura en Ingenieria Informática</h3>
+        <span>abril.2009-jun.2014</span>
+      </div>
+      <p>
+        Escuela de Ingenieria Informática, Universidad de Buenos Aires, Buenos
+        Aires.
+      </p>
+    </div>
+
+    <section class="sections Experiencia-laboral">
+      <i class="fa-solid fa-briefcase"></i>
+      <h2>Experiencia laboral</h2>
+    </section>
+
+    <div class="info">
+      <div class="educacion">
+        <h3><li>Desarrollador de software</li></h3>
+        <span>may.2021-sep.2022</span>
+      </div>
+      <p>CYXUS, California</p>
+      <ul>
+        <li>
+          Colaboración con el equipo de producción para conocer los requisitos y
+          especificaciones empresariales en torno a la gestión de carteras,
+          análisis y riesgos
+        </li>
+        <li>
+          Resolución de problemas complejos utilizando las últimas tecnologias
+          móviles, web y de nube
+        </li>
+        <li>
+          Codificación eficaz de cambios y alteraciones de software en base a
+          especificaciones de diseño concretas
+        </li>
+        <li>
+          Desarrollo y presentación de conclusiones y soluciones a altos
+          ejecutivos y partes interesadas
+        </li>
+      </ul>
+      <br />
+      <div class="educacion">
+        <h3><li>Desarrollador de software</li></h3>
+        <span>ene.2019-abr.2021</span>
+      </div>
+      <p>Control PRO, Buenos Aires</p>
+      <ul>
+        <li>Trabajé con éxito tanto a nivel independiente como en equipo</li>
+        <li>
+          Realicé tareas de prueba automatizadas y desarrollé funciones
+          complejas de forma rutinaria
+        </li>
+        <li>Abordé efizcamente errores complejos</li>
+        <li>
+          Implementación y actualización de módulos de aplicación bajo la
+          dirección de desarrolladores de software senior
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
